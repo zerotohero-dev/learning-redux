@@ -1,0 +1,20 @@
+
+
+
+The entire state is a single JavaScript object.
+(including the data and the UI state)
+
+The state tree is read-only.
+The only way to change the state-tree is by dispatching an action.
+
+And action is the minimum representation of the change in the data.
+
+Use pure functions.
+
+the view layer is the most predictable when it is described as a pure function of the application state.
+
+the state state mutations in your app need to be described as a pure function that takes the previous state, and the action to be dispatched.
+and returns the next state of your application.
+
+fn(prevState, action, nextState) => reducer
+
